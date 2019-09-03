@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0"
+    xmlns="http://java.sun.com/xml/ns/javaee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+  <servlet>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>servlet.LoginServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>InsertUser</servlet-name>
+    <servlet-class>servlet.InsertUser</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>SelectUser</servlet-name>
+    <servlet-class>servlet.SelectUser</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>DeleteUser</servlet-name>
+    <servlet-class>servlet.DeleteUser</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>FenYeServlet</servlet-name>
+    <servlet-class>servlet.FenYeServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>PagingServlet</servlet-name>
+    <servlet-class>servlet.PagingServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ModifyCartServlet</servlet-name>
+    <servlet-class>servlet.ModifyCartServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AddToCartServlet</servlet-name>
+    <servlet-class>servlet.AddToCartServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>PayServlet</servlet-name>
+    <servlet-class>servlet.PayServlet</servlet-class>
+  </servlet>
+
+
+
+
+
+
+
+
+
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/LoginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>InsertUser</servlet-name>
+    <url-pattern>/InsertUser</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SelectUser</servlet-name>
+    <url-pattern>/SelectUser</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DeleteUser</servlet-name>
+    <url-pattern>/DeleteUser</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>FenYeServlet</servlet-name>
+    <url-pattern>/FenYeServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>PagingServlet</servlet-name>
+    <url-pattern>/PagingServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ModifyCartServlet</servlet-name>
+    <url-pattern>/ModifyCartServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddToCartServlet</servlet-name>
+    <url-pattern>/AddToCartServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>PayServlet</servlet-name>
+    <url-pattern>/PayServlet</url-pattern>
+  </servlet-mapping>
+
+</web-app>
