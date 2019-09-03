@@ -237,7 +237,7 @@ public class TrainUI extends JFrame {
 		 */
 		setColumnWidthsForSTSQuery(); // 设置表格每列的列宽
 		
-		// 去你奶奶的布局管理器！
+		// 禁用布局管理器！
 		stationToStationPanel.setLayout(null);
 		
 		// 给每个组件自己定位！
