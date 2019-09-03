@@ -18,7 +18,6 @@ public class UserDao {
 		Object[] o = { username,password,userid};
 		return BaseDao.update(sql, o);
 	}
-	
 	//修改用户权限
 	public boolean updateMinfo(Integer roleid,Integer userid) {
 		String sql = "UPDATE t_roleanduser SET roleid=? WHERE userid=?";
@@ -54,19 +53,15 @@ public class UserDao {
 		}
 		return null;
 	}
-
 	// 插入用户
 	public boolean insertUser(String username, String password, String rolename) {
 		int roleid = roletoid(rolename);
 		String sql1 = "insert into t_user (userid,username,password) values (userid_seq.nextval,?,?)";
 		Object[] o1 = { username, password };
-
 		String sql2 = "insert into t_roleanduser (userid,roleid) values (userid_seq.nextval-1,?)";
 		Object[] o2 = { roleid };
-
 		return BaseDao.update(sql1, o1) & BaseDao.update(sql2, o2);
 	}
-
 	// 查询所有用户信息，获取最大页数
 	public Integer getMaxPage(Integer size) {
 		Connection conn = null;
@@ -89,9 +84,7 @@ public class UserDao {
 		}
 		return (num % size == 0) ? (num / size) : (num / size + 1);
 	}
-
 	// 分页查询用户信息
-
 	public List<User> selectByPage(Integer currpage, Integer size) {
 		Connection conn = null;
 		PreparedStatement ps = null;
@@ -124,7 +117,6 @@ public class UserDao {
 		}
 		return null;
 	}
-
 	// 根据UID查询是否存在该用户
 	public boolean isExist(Integer uid) {
 		Connection conn = null;
@@ -141,12 +133,9 @@ public class UserDao {
 				u.setUsername(rs.getString("username"));
 				return true;
 			}
-			
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-
 		return false;
 	}
 

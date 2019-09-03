@@ -31,15 +31,17 @@ public class CartDao {
 		
 	}
 	// 修改购物车
-	public boolean modifyCart(Book bk, Integer qty) {
+	public boolean modifyCart(Book bk, Integer qty, Integer inv) {
 		Integer bid = bk.getId();
-		String sql1 = null;
+		String sql1, sql2 = null;
 		carts = cartQuery(bid);
 		Cart ct = carts.get(bid);
 		ct.setQuantity(qty);
 		sql1 = "UPDATE t_cart SET bookqty=?, bookpr=? WHERE bookid=?";
+		sql2 = "UPDATE t_book SET num=? WHERE bookid=?";
 		Object[] o1 = {ct.getQuantity(), ct.getQuantity() * bk.getPrice(), bid};
-		return BaseDao.update(sql1, o1);
+		Object[] o2 = {inv - qty, bid};
+		return BaseDao.update(sql1, o1) && BaseDao.update(sql2, o2);
 	}
 	// 查询购物车
 	public Map<Integer, Cart> cartQuery(Integer bid) {

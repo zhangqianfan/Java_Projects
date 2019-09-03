@@ -10,7 +10,6 @@ public class Book {
 	private String imgurl;
 	private Integer Inventory;
 	
-	
 	public Integer getInventory() {
 		return Inventory;
 	}

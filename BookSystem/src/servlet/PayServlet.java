@@ -28,7 +28,6 @@ public class PayServlet extends HttpServlet {
 		String oidstr = request.getParameter("orderid");
 		String paypwd1 = request.getParameter("paypwd");
 		Connection conn = null;
-		//Connection conn2 = null;
 		PreparedStatement ps1 = null;
 		PreparedStatement ps2 = null;
 		ResultSet rs1 = null;

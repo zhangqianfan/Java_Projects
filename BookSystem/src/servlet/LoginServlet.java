@@ -20,7 +20,6 @@ public class LoginServlet extends HttpServlet {
 
 	public void destroy() {
 		super.destroy(); // Just puts "destroy" string in log
-		// Put your code here
 	}
 
 	@Override
@@ -40,7 +39,6 @@ public class LoginServlet extends HttpServlet {
 			request.setAttribute("username", username);
 			request.setAttribute("password", password);
 			request.setAttribute("rolename", rolename);
-			
 			HttpSession hs = request.getSession();
 			hs.setAttribute("rolename", rolename);
 			hs.setAttribute("user", u);
@@ -56,7 +54,6 @@ public class LoginServlet extends HttpServlet {
 				response.sendRedirect("PagingServlet?curpg=1");
 			}
 		}
-
 	}
 
 	public void doPost(HttpServletRequest request, HttpServletResponse response)
@@ -65,7 +62,6 @@ public class LoginServlet extends HttpServlet {
 	}
 
 	public void init() throws ServletException {
-		// Put your code here
 	}
 
 }

@@ -4,10 +4,8 @@
 <head>
 <title>图书系统</title>
 </head>
-<body style="background-image: url('img/u=4147206523,1119900303&fm=21&gp=0.jpg');font-family:Microsoft YaHei">
-
-
-<h2 align="center"><span style="color: white">在线小书城</span></h2>
+<body style="background-image: url('img/u=4147206523,1119900303&fm=21&gp=0.jpg');">
+<h3 align="center"><span style="color: white">在线小书城</span></h3>
 	<form action="LoginServlet" method="post">
 		<table align="center" width="500" height="500" border="0" cellpadding="1"  >
 			<tr>

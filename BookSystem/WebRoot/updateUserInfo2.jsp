@@ -36,7 +36,6 @@
 						<input type="password" name="password">
 					</div></td>
 			</tr>
-
 			<tr>
 				<td><div align="right">角色：</div></td>
 				<td><div align="left">
@@ -44,12 +43,10 @@
 							type="radio" name="rolename" value="ordinary_user" />普通用户
 					</div></td>
 			</tr>
-
 			<tr>
 				<td colspan="2" align="center"><div>
 						<input type="submit" value="更新"> <input type="reset"
 							value="清空"> <a href="javascript:history.go(-1)">返回上一页</a>
-
 					</div></td>
 			</tr>
 		</table>

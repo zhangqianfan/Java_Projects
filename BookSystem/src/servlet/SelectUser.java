@@ -22,7 +22,6 @@ public class SelectUser extends HttpServlet {
 
 	public void destroy() {
 		super.destroy(); // Just puts "destroy" string in log
-		// Put your code here
 	}
 
 	public void doGet(HttpServletRequest request, HttpServletResponse response)

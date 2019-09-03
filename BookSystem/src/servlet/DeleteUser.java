@@ -17,7 +17,6 @@ public class DeleteUser extends HttpServlet {
 
 	public void destroy() {
 		super.destroy(); // Just puts "destroy" string in log
-		// Put your code here
 	}
 
 	public void doGet(HttpServletRequest request, HttpServletResponse response)
@@ -43,7 +42,6 @@ public class DeleteUser extends HttpServlet {
 	}
 
 	public void init() throws ServletException {
-		// Put your code here
 	}
 
 }

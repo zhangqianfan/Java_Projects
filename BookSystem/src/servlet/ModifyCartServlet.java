@@ -26,12 +26,14 @@ public class ModifyCartServlet extends HttpServlet {
 			throws ServletException, IOException {
 		String bidstr = request.getParameter("bid");
 		String numstr = request.getParameter("bnum");
+		String invstr = request.getParameter("inv");
 		Integer bookid = Integer.parseInt(bidstr);
 		Integer bnum = Integer.parseInt(numstr);
+		Integer inv = Integer.parseInt(invstr);
 		BookDao bd = new BookDao();
 		Book bk = bd.getBookById(bookid);
 		CartDao cd = new CartDao();
-		if (cd.modifyCart(bk, bnum)) {
+		if (cd.modifyCart(bk, bnum, inv)) {
 			response.sendRedirect("ok-ordinary.jsp");
 		}
 		else {

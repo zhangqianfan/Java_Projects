@@ -40,5 +40,4 @@
 	<a href="javascript:history.go(-1)">后退</a>&nbsp;&nbsp;
 	<a href="superM_index.jsp">返回管理首页</a></div>
 </body>
-
 </html>

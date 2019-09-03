@@ -37,7 +37,5 @@
 	 <input type="radio" name="exchanged" value="换货">换货<br /><br />
 	 <input type="submit" value="提交申请">
 	 </form>
-	 <br />
-	 <a href="javascript:history.go(-1)">返回上一页</a>
 </body>
 </html>

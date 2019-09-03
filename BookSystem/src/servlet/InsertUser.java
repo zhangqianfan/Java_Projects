@@ -12,19 +12,12 @@ import dao.UserDao;
 
 public class InsertUser extends HttpServlet {
 
-	/**
-	 * Constructor of the object.
-	 */
 	public InsertUser() {
 		super();
 	}
 
-	/**
-	 * Destruction of the servlet. <br>
-	 */
 	public void destroy() {
 		super.destroy(); // Just puts "destroy" string in log
-		// Put your code here
 	}
 
 	public void doGet(HttpServletRequest request, HttpServletResponse response)
@@ -48,7 +41,6 @@ public class InsertUser extends HttpServlet {
 	}
 
 	public void init() throws ServletException {
-		// Put your code here
 	}
 
 }

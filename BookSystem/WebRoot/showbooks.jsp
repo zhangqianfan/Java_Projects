@@ -46,7 +46,6 @@
 	<a href="FenYeServlet?currpage=${currpage+1}">下一页</a>&nbsp;&nbsp;
 	<a href="FenYeServlet?currpage=${maxpage}">末页</a><br><br>
 	<a href="javascript:history.go(-1)">后退</a>&nbsp;&nbsp;
-	</div>
+	<a href="superM_index.jsp">返回管理首页</a></div>
 </body>
-
 </html>

@@ -159,7 +159,6 @@ public class BookDao {
 				}
 				return book.getTitle()!=null;
 			} catch (SQLException e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
 			

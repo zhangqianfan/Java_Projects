@@ -14,20 +14,13 @@ import entity.Book;
 
 public class FenYeServlet extends HttpServlet {
 	private int size = 5;
-
-	/**
-	 * Constructor of the object.
-	 */
+	
 	public FenYeServlet() {
 		super();
 	}
 
-	/**
-	 * Destruction of the servlet. <br>
-	 */
 	public void destroy() {
 		super.destroy(); // Just puts "destroy" string in log
-		// Put your code here
 	}
 
 	public void doGet(HttpServletRequest request, HttpServletResponse response)
@@ -79,8 +72,5 @@ public class FenYeServlet extends HttpServlet {
 	 * @throws ServletException
 	 *             if an error occurs
 	 */
-	public void init() throws ServletException {
-		// Put your code here
-	}
 
 }
